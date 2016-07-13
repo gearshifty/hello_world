@@ -1,0 +1,52 @@
+/* 环图组件样式 */
+.h5_component_ring{
+
+}
+.h5_component_ring .mask{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	border-radius: 50%;
+	background-color: #eee;
+	z-index: 99;
+	-webkit-transform:scale(0.8);
+}
+.h5_component_ring .text{
+	width:100%;
+	top:40%;
+	opacity: 0;
+}
+.h5_component_pie_load .triangle{
+	width:0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -5px;
+    /*div制作三角指针，针尖朝上则左右透明下着色*/
+    border-left:transparent 5px solid;
+    border-bottom:#f00 70px solid;
+    border-right:transparent 5px solid;
+    /*设置旋转变形锚点*/
+    transform-origin: 50% 127%;
+    transform:rotate(-90deg);
+    -webkit-animation:rot 2s ease .4s forwards;
+    z-index: 9999;
+}
+@-webkit-keyframes rot{
+    0%{transform:rotate(-90deg)}
+    100%{transform:rotate(30deg)}
+}
+.h5_component_ring .circle{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	border-radius: 50%;
+	background-color: #f00;
+	z-index: 10000;
+	-webkit-transform:scale(0.2);	
+}
