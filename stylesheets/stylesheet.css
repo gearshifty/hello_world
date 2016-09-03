@@ -7,7 +7,9 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #000; 
+  background: #ddd;
+}
 
 a {
   color: #1e6bb8;
@@ -243,3 +245,19 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+.baseinfo{
+  max-width:800px;
+  margin: 20px auto;
+}
+.baseinfo ul{
+  list-style: none;
+  /*text-align: left;*/
+}
+.baseinfo_l,.baseinfo_r{
+  display: inline-block;
+}
+.baseinfo_r{
+  font-size: 20px;
+  text-align: left;
+}
